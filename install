@@ -24,7 +24,7 @@ function ee_lib_echo_fail()
 # Checking permissions
 if [[ $EUID -ne 0 ]]; then
     ee_lib_echo_fail "Sudo privilege required..."
-    ee_lib_echo_fail "Uses: wget -qO ee rt.cx/ee && sudo bash ee"
+    ee_lib_echo_fail "Uses: wget -qO ee https://raw.githubusercontent.com/iam404/easyengine-py/master/install && sudo bash ee"
     exit 100
 fi
 
@@ -276,7 +276,7 @@ function ee_install()
         ee_branch=master
     fi
 
-    git clone -b $ee_branch https://github.com/EasyEngine/easyengine.git /tmp/easyengine --quiet > /dev/null \
+    git clone -b $ee_branch https://github.com/iam404/easyengine-py.git /tmp/easyengine --quiet > /dev/null \
     || ee_lib_error "Unable to clone EasyEngine, exit status" $?
 
     cd /tmp/easyengine
@@ -802,5 +802,5 @@ ee_lib_echo "For EasyEngine (ee) auto completion, run the following command"
 echo
 ee_lib_echo_info "source /etc/bash_completion.d/ee_auto.rc"
 echo
-ee_lib_echo "EasyEngine (ee) installed/updated successfully"
-ee_lib_echo "EasyEngine (ee) help: http://docs.rtcamp.com/easyengine/"
+ee_lib_echo "EasyEngine-py (ee) installed/updated successfully"
+ee_lib_echo "EasyEngine-py (ee) is the forked version of : https://github.com/EasyEngine/easyengine"
