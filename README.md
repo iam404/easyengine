@@ -1,7 +1,6 @@
 
-**Update:** [This is the forked version of the original EasyEngine that was written in Python. This repository is deprecated. ](https://easyengine.io/).
+**NOTICE:** [This is the forked version of the original EasyEngine that was written in Python. This repository is deprecated. ](https://easyengine.io/).
 
-<img src="https://d3qt5vpr7p9rgn.cloudfront.net/wp-content/uploads/2013/08/easy-engine-logo-2-RS1-240x184.png" alt="EasyEngine Logo" align="right" />
 
 EasyEngine (ee) is a python tool, which makes it easy to manage your wordpress sites running on nginx web-server.
 
@@ -34,7 +33,7 @@ Update procedure for EasyEngine to latest version
 
 #### For current installed version prior to 3.0.6
 ```bash
-wget -qO ee rt.cx/ee && sudo bash ee
+wget -qO ee https://raw.githubusercontent.com/iam404/easyengine-py/master/install && sudo bash ee
 
 ```
 #### If current version is after than 3.0.6
